@@ -3,6 +3,16 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+/**
+ * Goal: post this to GitHub to enable me to run React as a GitHub page.
+ * ran 'npm install gh-pages --save-dev' to enable me to publish on Github
+ * Added the following to the 'package.json':
+ * "predeploy": "npm run build",
+ * "deploy": "gh-pages -d dist",
+ * Then added the following to the 'vite.config.js':
+ * base: "/YOUR_REPOSITORY_NAME", {before the [react()] line}
+ */
+
 function App() {
   const [count, setCount] = useState(0)
 
